@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>CREATE YOUR PLAYLIST!</h1>
+<p>
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+        {{form.name.label}}
+        {{form.name}} <br>
+        {{form.desc.label}}
+        {{form.desc}} <br>
+        <button type="submit">SUBMIT</button>
+
+    </form>
+</p>
+
+{% endblock %}

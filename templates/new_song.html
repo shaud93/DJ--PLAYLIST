@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Add a form that when submitted creates a new song!</h1>
+<p>
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+        {{form.name.label}}
+        {{form.name}} <br>
+        {{form.artist.label}}
+        {{form.artist}} <br>
+        <button type="submit">SUBMIT</button>
+
+    </form>
+</p>
+
+{% endblock %}
